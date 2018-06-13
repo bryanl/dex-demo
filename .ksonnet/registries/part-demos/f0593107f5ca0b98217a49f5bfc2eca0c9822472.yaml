@@ -1,0 +1,9 @@
+apiVersion: 0.1.0
+gitVersion:
+  commitSha: f0593107f5ca0b98217a49f5bfc2eca0c9822472
+  refSpec: master
+kind: ksonnet.io/registry
+libraries:
+  dex:
+    path: dex
+    version: ""

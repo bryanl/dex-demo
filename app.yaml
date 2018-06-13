@@ -1,0 +1,25 @@
+apiVersion: 0.1.0
+environments:
+  default:
+    destination:
+      namespace: default
+      server: https://localhost:6443
+    k8sVersion: v1.10.3
+    path: default
+kind: ksonnet.io/app
+libraries:
+  dex:
+    gitVersion:
+      commitSha: db78cbfdb2ff468fae4a8b0f0b86d01938050760
+      refSpec: master
+    name: dex
+    registry: part-demos
+name: dex-demo
+registries:
+  part-demos:
+    gitVersion:
+      commitSha: f0593107f5ca0b98217a49f5bfc2eca0c9822472
+      refSpec: master
+    protocol: github
+    uri: https://github.com/bryanl/part-demos
+version: 0.0.1
